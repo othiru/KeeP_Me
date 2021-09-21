@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap">
+  </link>
+  <link rel="stylesheet" href="style.css">
+  </link>
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <input class="modal-title" placeholder="Title" type="text">
+      <input class="modal-text" placeholder="Take a note..." type="text">
+      <span class="modal-close-button">Close</span>
+    </div>
+  </div>
+  <main>
+    <header>
+      <img class="header-logo" src="keepMeIcon.jpg">
+      <h2 class="header-title">KeeP Me</h2>
+    </header>
+    <div id="form-container">
+      <form id="form" autocomplete="off">
+        <input id="note-title" placeholder="Title" type="text">
+        <input id="note-text" placeholder="Take a note..." type="text">
+        <div id="form-buttons">
+          <button type="submit" id="submit-button">KeeP</button>
+          <button type="button" id="form-close-button">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div id="notes"></div>
+    <div id="placeholder">
+      <p id="placeholder-text">You haven't KeeP any notes!</p>
+    </div>
+    <div id="color-tooltip">
+      <div class="color-option" data-color="#fff"    id="white"></div>
+      <div class="color-option" data-color="#E6E6FA" id="purple"></div>
+      <div class="color-option" data-color="#ffefd5" id="orange"></div>
+      <div class="color-option" data-color="#c9ffe5" id="teal"></div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
